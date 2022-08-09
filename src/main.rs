@@ -16,9 +16,5 @@ fn main() {
 }
 
 fn setup_system(mut commands: Commands) {
-    // Bevy 0.7
-    commands.spawn_bundle(OrthographicCameraBundle::new_2d());
-
-    // Bevy 0.8
-    // commands.spawn_bundle(Camera2dBundle::default());
+    commands.spawn_bundle(Camera2dBundle::default());
 }
